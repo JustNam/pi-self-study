@@ -9,3 +9,5 @@ Self-paced JS learning repo, Claude-assisted.
 4. Run `/progress` anytime to see your status
 
 See `CLAUDE.md` for rules, `curriculum.md` for the full topic list.
+
+> **Notice**: Don't use another AI to solve the exercises for you. Claude here runs the entire learning mechanism (practice generation, checking, progress tracking) - outsourcing the answers defeats the whole point.
