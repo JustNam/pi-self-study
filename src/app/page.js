@@ -1,5 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import Paper from "@mui/material/Paper";
 
 function findLessonRoutes() {
   const appDir = path.join(process.cwd(), "src", "app");
@@ -30,21 +37,34 @@ export default function Home() {
   const routes = findLessonRoutes();
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h1>PI Self-Study - Lessons</h1>
+    <Container maxWidth="sm" sx={{ py: 6 }}>
+      <Typography variant="h4" component="h1" gutterBottom>
+        PI Self-Study
+      </Typography>
+      <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+        Lessons
+      </Typography>
       {routes.length === 0 ? (
-        <p>
+        <Typography color="text.secondary">
           No exercises yet. Run <code>/practice</code> to generate one.
-        </p>
+        </Typography>
       ) : (
-        <ul>
-          {routes.map((route) => (
-            <li key={route}>
-              <a href={route}>{route}</a>
-            </li>
-          ))}
-        </ul>
+        <Paper variant="outlined">
+          <List disablePadding>
+            {routes.map((route, i) => (
+              <ListItem
+                key={route}
+                disablePadding
+                divider={i < routes.length - 1}
+              >
+                <ListItemButton component="a" href={route}>
+                  <ListItemText primary={route} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </Paper>
       )}
-    </main>
+    </Container>
   );
 }
