@@ -2,6 +2,9 @@
 .claude/salt
 .claude/progress.json
 
+# generated exercise pages (template repo - not shipped)
+/src/app/section*/
+
 # dependencies
 /node_modules
 /.pnp
