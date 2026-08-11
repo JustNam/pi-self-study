@@ -22,8 +22,9 @@ import { useEffect } from "react";
 export default function JsOutputPage() {
   useEffect(() => {
     // TODO: set the innerHTML of the "demo" div to a message of your choice
-
+      document.getElementById("demo").innerHTML = "Hello from JS Output!";
     // TODO: console.log() a different message
+    console.log("This is a message logged to the console.");
   }, []);
 
   return (

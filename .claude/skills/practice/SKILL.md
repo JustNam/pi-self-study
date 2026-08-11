@@ -8,4 +8,4 @@ description: Give the student their next exercise. Run after /setup.
    - a comment block explaining the intent of the exercise
    - a comment instruction for what to fill in
    - blank/empty code snippet (TODO markers) - never the solution
-3. Tell the student to run `npm run dev` and open the page themselves - do not run it or read its output yourself.
+3. Tell the student: "Run `npm run dev` if it's not already running, then open http://localhost:3000/<section>/<item>." Do not run it or read its output yourself.
