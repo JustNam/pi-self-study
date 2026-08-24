@@ -1,6 +1,12 @@
-# PI Self-Study
+# Self-Study
 
 Self-paced JS learning repo, Claude-assisted.
+
+## Why
+Students hit unknown-unknown gaps, class time got eaten re-teaching basics, reading alone didn't build depth, and students defaulted to asking AI instead of checking their own browser output.
+
+## What
+A self-paced JS practice tool where Claude scaffolds blank exercises, the student runs and checks them in-browser, and Claude only verifies pass/fail - never solves or explains the bug.
 
 ## Start
 1. Run `/setup`
