@@ -2,6 +2,8 @@
 
 Self-paced JS learning repo, Claude-assisted.
 
+Repo: https://github.com/JustNam/pi-self-study
+
 ## Why
 Students hit unknown-unknown gaps, class time got eaten re-teaching basics, reading alone didn't build depth, and students defaulted to asking AI instead of checking their own browser output.
 
